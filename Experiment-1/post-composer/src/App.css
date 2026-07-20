@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ababad;
+}
+#root {
+  width: 100%;
+}
+.container {
+  width: 70%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #b88a8a6e;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+h1 {
+  text-align: center;
+  color: #06090d;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+h2 {
+  color: #030303;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #f5d2d2;
+  border-radius: 10px;
+  resize: none;
+  box-sizing: border-box;
+  background: rgb(231, 218, 218);
+  color: black;
+}
+textarea:focus {
+  outline: none;
+  border-color: #09090a;
+}
+.platforms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
+  max-width: 450px;
+  margin: 20px auto;
+}
+.platforms label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #090808;
+  cursor: pointer;
+}
+.platforms input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+.upload {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+input[type="file"] {
+  font-size: 15px;
+}
+.file {
+  color: #050404;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.validation {
+  margin-top: 20px;
+  padding: 15px;
+  background:#E7DADA;
+  border-left: 5px solid #050506;
+  border-radius: 10px;
+}
+.validation h3 {
+  margin-top: 0;
+  color: #0b0c0e;
+}
+.success {
+  color: rgb(4, 2, 3);
+  font-weight: bold;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.upload {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.upload-btn {
+  background-color: #E7DADA;
+  color: rgb(3, 3, 3);
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.upload-btn:hover {
+  background-color: #d5c1c1;
+}
+.file-name {
+  color: #333;
+  font-size: 16px;
+}
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: solid #f5d2d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.save-btn:hover {
+  background-color: #E7DADA;
+}
+.draft-card {
+  background: #E7DADA;
+  border-left: 5px solid #0d0d0e;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.draft-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+.draft-card p {
+  margin: 6px 0;
+  color: #444;
+}
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: rgb(225, 187, 187);
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.edit-btn {
+  background-color: #8c918d;
+}
+.edit-btn:hover {
+  background-color: #8c918d;
+}
+.delete-btn {
+  background-color: #8c918d;
+}
+.delete-btn:hover {
+  background-color: #8c918d;
+}
+.no-drafts {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-top: 15px;
+}
+.container h3 {
+  text-align: center;
+  color: #0a0a0a;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.last-edit {
+  color: #000000;      
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
