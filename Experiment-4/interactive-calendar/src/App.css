@@ -1,0 +1,510 @@
+.app-container {
+  min-height: 100vh;
+  padding: 30px;
+  background: #eef0ff;
+  color: #252447;
+}
+
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #302b63;
+  font-weight: 700;
+}
+
+
+/* =========================
+   CALENDAR CONTAINER
+========================= */
+
+.calendar-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto 0;
+  background: #f7f7ff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(67, 56, 140, 0.10);
+  overflow: hidden;
+}
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.event-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 4px 6px;
+}
+
+.event-card strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-card span {
+  display: block;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fc-event {
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   PERFORMANCE MONITOR
+========================= */
+
+.performance-monitor {
+  margin-top: 24px;
+  padding: 20px;
+  background: #f7f7ff;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(67, 56, 140, 0.08);
+  border: 1px solid #dcdcf5;
+}
+
+.performance-monitor h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #302b63;
+}
+
+.monitor-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e1e1f2;
+}
+
+.monitor-stat:last-child {
+  border-bottom: none;
+}
+
+.monitor-stat span {
+  color: #68678a;
+}
+
+.monitor-stat strong {
+  font-size: 15px;
+  color: #403b78;
+}
+
+
+/* =========================
+   POST SUMMARY
+========================= */
+
+.post-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.summary-card {
+  background: #f7f7ff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #dcdcf5;
+  box-shadow: 0 4px 12px rgba(67, 56, 140, 0.07);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(67, 56, 140, 0.12);
+}
+
+.summary-card span {
+  display: block;
+  font-size: 14px;
+  color: #68678a;
+  margin-bottom: 8px;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #5148a5;
+}
+
+
+/* =========================
+   CALENDAR
+========================= */
+
+.fc .fc-toolbar {
+  margin-bottom: 20px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #302b63;
+}
+
+
+/* Calendar buttons */
+
+.fc .fc-button {
+  background: #6659c7 !important;
+  border-color: #6659c7 !important;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.fc .fc-button:hover {
+  background: #5549b3 !important;
+  border-color: #5549b3 !important;
+  transform: translateY(-1px);
+}
+
+.fc .fc-button.fc-button-active {
+  background: #463c99 !important;
+  border-color: #463c99 !important;
+}
+
+
+/* Day cells */
+
+.fc .fc-daygrid-day {
+  min-height: 110px;
+  background: #f7f7ff;
+}
+
+.fc .fc-daygrid-day-number {
+  padding: 8px;
+  font-weight: 600;
+  color: #514f78;
+}
+
+
+/* Weekday header */
+
+.fc .fc-col-header-cell {
+  background: #e8e8fb;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #514b8f;
+  font-weight: 600;
+}
+
+
+/* Calendar borders */
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #dcdcf0;
+}
+
+
+/* Today */
+
+.fc .fc-day-today {
+  background: #e3e4ff !important;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.fc .fc-event {
+  border: none;
+  border-radius: 6px;
+  padding: 3px 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fc .fc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(67, 56, 140, 0.20);
+}
+
+.fc .fc-event-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================
+   ADD / EDIT FORM
+========================= */
+
+.post-form-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(48, 43, 99, 0.40);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.post-form {
+  width: 400px;
+  max-width: calc(100% - 40px);
+  background: #f7f7ff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(48, 43, 99, 0.22);
+  border: 1px solid #ddddf5;
+}
+
+.post-form h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: #302b63;
+}
+
+.selected-date {
+  margin: 0 0 22px;
+  color: #68678a;
+}
+
+.post-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-form label {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #403b70;
+}
+
+.post-form input,
+.post-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #cfcfea;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: #eeeeff;
+  color: #302b63;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-form input:focus,
+.post-form select:focus {
+  border-color: #6659c7;
+  box-shadow: 0 0 0 3px rgba(102, 89, 199, 0.12);
+}
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.form-buttons button:hover {
+  transform: translateY(-1px);
+}
+
+
+/* Cancel */
+
+.form-buttons button[type="button"] {
+  background: #dedff2;
+  color: #4b4a6b;
+}
+
+.form-buttons button[type="button"]:hover {
+  background: #d1d2e9;
+}
+
+
+/* Save */
+
+.form-buttons button[type="submit"] {
+  background: #6659c7;
+  color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background: #5549b3;
+}
+
+
+/* =========================
+   CUSTOM EVENTS
+========================= */
+
+.custom-event {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 4px 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.custom-event strong {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-event small {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+
+/* =========================
+   PLATFORM COLORS
+========================= */
+
+.platform-instagram {
+  background: #e1306c !important;
+  border-color: #e1306c !important;
+  color: white !important;
+}
+
+.platform-youtube {
+  background: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: white !important;
+}
+
+.platform-facebook {
+  background: #1877f2 !important;
+  border-color: #1877f2 !important;
+  color: white !important;
+}
+
+.platform-linkedin {
+  background: #0a66c2 !important;
+  border-color: #0a66c2 !important;
+  color: white !important;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .post-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .post-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .app-container h1 {
+    font-size: 24px;
+  }
+}
+/* =========================
+   ALL POSTS ABOVE CALENDAR
+========================= */
+
+.all-posts-section {
+  margin: 20px 0;
+}
+
+.all-posts-section h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #302b63;
+}
+
+.all-posts-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 5px 2px 12px;
+}
+
+.top-post-card {
+  flex: 0 0 220px;
+  padding: 14px;
+  background: #f7f7ff;
+  border: 1px solid #dcdcf5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(67, 56, 140, 0.07);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.top-post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(67, 56, 140, 0.12);
+}
+
+.top-post-card strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #302b63;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-post-card span {
+  display: block;
+  margin-bottom: 5px;
+  color: #6659c7;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.top-post-card small {
+  color: #68678a;
+  font-size: 12px;
+}
+
+.no-posts {
+  color: #68678a;
+}
