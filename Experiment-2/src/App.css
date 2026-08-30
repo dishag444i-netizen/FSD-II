@@ -41,7 +41,7 @@ h2 {
 }
 
 
-/* Post Input */
+
 
 textarea {
   width: 100%;
@@ -62,7 +62,7 @@ textarea:focus {
 }
 
 
-/* Character Counter */
+
 
 .character-count {
   color: #0a090a;
@@ -72,7 +72,7 @@ textarea:focus {
 }
 
 
-/* Last Edited */
+
 
 .last-edit {
   color: #000000;
@@ -82,7 +82,7 @@ textarea:focus {
 }
 
 
-/* Platform Selection */
+
 
 .platforms {
   display: grid;
@@ -105,7 +105,7 @@ textarea:focus {
 }
 
 
-/* Upload */
+
 
 .upload {
   display: flex;
@@ -133,7 +133,6 @@ textarea:focus {
 }
 
 
-/* Publish Button */
 
 .publish-btn {
   width: 100%;
@@ -152,7 +151,7 @@ textarea:focus {
 }
 
 
-/* Search */
+
 
 .search-bar {
   width: 100%;
@@ -171,7 +170,7 @@ textarea:focus {
   outline: none;
   border-color: #666b68;
 }
-/* Saved Posts */
+
 
 .post-card {
   background: #E7DADA;
