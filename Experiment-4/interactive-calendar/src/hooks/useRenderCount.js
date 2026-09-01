@@ -1,11 +1,11 @@
 import { useRef } from "react";
 
 function useRenderCount() {
-  const renderCount = useRef(0);
+  const count = useRef(0);
 
-  renderCount.current += 1;
+  count.current += 1;
 
-  return renderCount.current;
+  return count.current;
 }
 
 export default useRenderCount;

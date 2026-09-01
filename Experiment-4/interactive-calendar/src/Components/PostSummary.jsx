@@ -1,15 +1,18 @@
 import { useMemo } from "react";
 
-function PostSummary({ events }) {
+function PostSummary({ events, optimized }) {
   const summary = useMemo(() => {
     return {
       total: events.length,
+
       instagram: events.filter(
         (event) => event.platform === "Instagram"
       ).length,
+
       youtube: events.filter(
         (event) => event.platform === "YouTube"
       ).length,
+
       facebook: events.filter(
         (event) => event.platform === "Facebook"
       ).length,
@@ -18,6 +21,7 @@ function PostSummary({ events }) {
 
   return (
     <div className="post-summary">
+
       <div className="summary-card">
         <span>Total Posts</span>
         <strong>{summary.total}</strong>
@@ -37,6 +41,7 @@ function PostSummary({ events }) {
         <span>Facebook</span>
         <strong>{summary.facebook}</strong>
       </div>
+
     </div>
   );
 }
